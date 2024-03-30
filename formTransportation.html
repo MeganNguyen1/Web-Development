@@ -1,45 +1,81 @@
 <!doctype html>
 <html>
 <head>
+<style>
+body {
+background-color:#F8F8FF;
+font-family:sans-serif;
+color:#778899;
+}
+
+h1 {
+text-align:center;
+}
+
+form {
+background-color:#D3D3D3;
+margin:10px;
+width:35%;
+height:450px;
+padding:25px;
+}
+
+label {
+margin:25px;
+font-size:medium;
+}
+
+button {
+border-radius:10px;
+background-color:#778899;
+color:#D3D3D3;
+border:1px solid #778899;
+margin-left:20px;
+margin-top:20px;
+}
+</style>
 </head>
 
 <body>
+
 <form>
-<label for="fullname">Full Name</label>
-<input id="fullname" type="text" placeholder="Full Name"/>
+<h1>Travel Registration Form</h1>
+
+<label for="fullname">Enter your Full Name:</label>
+<input id="fullname" type="text" placeholder="Full Name" required />
 
 <br>
 
 <label for="age">Enter your Age:</label>
-<input id="age" type="number"/>
+<input id="age" type="number"  placeholder="enter your age" required />
 
 <br>
 
-<label for="email">Enter your Email</label>
-<input id="email" type="email"/>
+<label for="email">Enter your Email:</label>
+<input id="email" type="email"  placeholder="enter your email" required />
 
 <br>
 
-<label for="dob">Date of Birth</label>
-<input id="dob" type="date"/>
+<label for="dob">Date of Birth:</label>
+<input id="dob" type="date" required />
 
 <br>
 
 <label for="password">Enter your Password:</label>
-<input id="password" type="password"/>
+<input id="password" type="password"  placeholder="enter your password" required />
 
 <br>
 
 <label for="time">Enter your desired time for flight:</label>
-<input id="time" type="time" placeholder="select time"/>
+<input id="time" type="time" placeholder="select time" required />
 
 <br>
 
-<label for="package">Select tour package</label>
+<label for="package">Select tour package:</label>
 <select id="package" name="package">
-<option value="USA">USA</option>
-<option value="UK">UK</option>
-<option value="china">China</option>
+<option value="USA" required >USA</option>
+<option value="UK" required >UK</option>
+<option value="china" required >China</option>
 </select>
 
 <br>
@@ -47,36 +83,36 @@
 <label for="checkbox">What would you want to avail?</label>
 <br>
 <label for="boarding">Boarding</label>
-<input id="boarding" type="checkbox">
+<input id="boarding" type="checkbox" required />
 <br>
 <label for="fooding">Fooding</label>
-<input id="fooding" type="checkbox">
+<input id="fooding" type="checkbox" required />
 <br>
 <label for="sightseeing">Sight seeing</label>
-<input id="sightseing" type="checkbox"/>
+<input id="sightseing" type="checkbox" required />
 
 <br>
 
 <label for="people">Number of people:</label>
-<input id="people" type="number"/>
+<input id="people" type="number" required />
 
 <br>
 
 <label for="code">Discount Coupon code:</label>
-<input id="code" type="text"/>
+<input id="code" type="text" />
 
 <br>
 
 <label for="terms">Terms and conditions</label>
 <br>
 <label for="agree">I agree</label>
-<input id="agree" type="radio"/>
+<input id="agree" type="radio" required />
 <label for="disagree">I disagree</label>
-<input id="disagree" type="radio"/>
+<input id="disagree" type="radio" required />
 
 <br>
 
-<button type="button">Complete reservation</button>
+<button type="submit">Complete reservation</button>
 
 </form>
 </body>
