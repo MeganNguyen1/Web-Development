@@ -12,6 +12,7 @@ background-color:#C24641;
 color:white;
 text-align:center;
 padding:1em;
+border-radius:8px;
 }
 
 nav ul li {
@@ -23,6 +24,22 @@ a {
 text-decoration:none;
 color:white;
 font-size:17px;
+}
+
+.about {
+background-color:#C24641;
+color:white;
+padding:25px;
+margin:25px;
+overflow:hidden;
+border-radius:8px;
+}
+
+button {
+background-color:#FBFBF9;
+color:#C24641;
+border:2px solid white;
+border-radius:5px;
 }
 </style>
 </head>
@@ -52,6 +69,28 @@ font-size:17px;
 <ul>
 </nav>
 </header>
+
+<section class="about">
+<h1>About</h1>
+<p>Our Website can give you restaurant bookings anytime, anywhere.</p>
+<button>See More</button>
+</section>
+
+<form>
+<h1>Fill out this form to book your restaurant.</h1>
+
+<label for="time">Time:</label>
+<input id="time" type="time" placeholder="enter time">
+
+<br>
+
+<label for="city">Pick your city:</label>
+<select id="city" name="city">
+<option value="houston">Houston</option>
+<option value="austin">Austin</option>
+<option value="san-antonio">San Antonio</option>
+</select>
+</form>
 </body>
 
 </html>
