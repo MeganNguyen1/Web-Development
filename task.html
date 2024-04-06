@@ -4,7 +4,7 @@
 <style>
 body {
 font-family:sans-serif;
-background-color:#FBFBF9;
+background-color:#F8F8FF;
 }
 
 header {
@@ -35,11 +35,34 @@ overflow:hidden;
 border-radius:8px;
 }
 
-button {
+.about button {
 background-color:#FBFBF9;
 color:#C24641;
 border:2px solid white;
 border-radius:5px;
+}
+
+form {
+background-color:#F5F5F5;
+color:#C24641;
+padding:25px;
+margin:25px;
+overflow:hidden;
+border-radius:8px;
+width:35%;
+height:350px;
+}
+
+label, input {
+margin:10px;
+}
+
+form button {
+margin-left:6px;
+background-color:#C24641;
+color:white;
+border:2px solid #C24641;
+border-radius:7px;
 }
 </style>
 </head>
@@ -80,7 +103,7 @@ border-radius:5px;
 <h1>Fill out this form to book your restaurant.</h1>
 
 <label for="time">Time:</label>
-<input id="time" type="time" placeholder="enter time">
+<input id="time" type="time" placeholder="enter time" required>
 
 <br>
 
@@ -90,6 +113,25 @@ border-radius:5px;
 <option value="austin">Austin</option>
 <option value="san-antonio">San Antonio</option>
 </select>
+
+<br>
+
+<label for="date">Select Date of Arival:</label>
+<input id="date" type="date" placeholder="enter date" required>
+
+<br>
+
+<label for="address">Enter the address of your restaurant:</label>
+<input id="address" type="text" placeholder="Enter the address" required>
+
+<br>
+
+<label for="people">How Many People will be there?:</label>
+<input id="people" type="number" placeholder="Number of people" required>
+
+<br>
+
+<button type="submit">Submit Form</button>
 </form>
 </body>
 
