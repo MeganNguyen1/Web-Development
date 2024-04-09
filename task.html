@@ -64,6 +64,31 @@ color:white;
 border:2px solid #C24641;
 border-radius:7px;
 }
+
+main {
+display:flex;
+flex:flex-direction-row;
+justify-content:center;
+}
+
+.link {
+background-color:#F5F5F5;
+color:#C24641;
+padding:25px;
+margin:25px;
+overflow:hidden;
+border-radius:8px;
+width:35%;
+height:350px;
+}
+
+.link button {
+margin-left:6px;
+background-color:#C24641;
+color:white;
+border:2px solid #C24641;
+border-radius:7px;
+}
 </style>
 </head>
 
@@ -99,6 +124,7 @@ border-radius:7px;
 <button>See More</button>
 </section>
 
+<main>
 <form>
 <h1>Fill out this form to book your restaurant.</h1>
 
@@ -133,6 +159,38 @@ border-radius:7px;
 
 <button type="submit">Submit Form</button>
 </form>
+
+<section class="link">
+<h1>Try our new feature!</h1>
+<h4>Type the link of your restaurant desired and it will genarate the full menu without seeing the full website.</h4> 
+<button>Learn More</button>
+
+<br>
+
+<label for="website">enter your desired food website:</label>
+<input id="website" type="text" placeholder="enter link" required>
+
+<button type="submit">Genarate!</button>
+</section>
+</main>
+
+<section>
+<h1>Contact</h1>
+
+<br>
+
+<p>Email: 123email@gmail.com</p>
+
+<br>
+
+<p>Phone: +1(123)-456-7890</p>
+
+<br>
+
+<label for="feedback">Enter your feedback:</label>
+<input id="feedback" type="text" placeholder="enter feedback">
+</section>
+
 </body>
 
 </html>
