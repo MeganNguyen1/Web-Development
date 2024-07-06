@@ -1,28 +1,93 @@
 <!doctype html>
+
 	<html>
 		<head>
+			<style>
+			body {
+			font-family: sans-serif;
+			display: flex;
+			justify-content: center;
+			height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+			}
+			
+			#login-container {
+			text-align:center;
+			}
+			
+			#login-form {
+			text-align: left;
+			margin-top: 20px;
+			display: inline-block;
+			}
+			
+			#home-form {
+			text-align:center;
+			}
+			
+			#login-form input {
+			width: 100%;
+			box-sizing: border-box;	
+			margin:5px;
+			padding:10px;
+			}
+			
+			button {
+			background-color:#3CB371;
+			color: white;
+			height: 26px;
+			border: 1px solid #3CB371;
+			}
+			
+			#login-button, #submit-button {
+			background-color:green;
+			color:white;
+			cursor: pointer;
+			padding: 10px 20px;
+			margin:10px;
+			border:none;
+			}
+			</style>
 		</head>
 		
 		<body>
 		<div id="login-container">
-				<div id="login-form">
+		<button id="login-button" onclick="showLoginForm()">Login</button>
+				<div id="login-form" style="display: none;">
 				<label for="username">Enter Username</label>
 				<br><br>
 				<input type="text" id="username" placeholder="enter here" required>
-			
+					
+				<br><br>
+					
 				<label for="password">Password</label>
 				<br><br>
 				<input type="password" id="password" placeholder="enter here" required>
 				<br><br>
 			
-				<button type="submit">Submit</button>
+				<a id="submit-button" href="javascript:redirectToHome()">Submit</a>
 				</div>
 		</div>
 		
-		<div id="home-form">
+		<div id="home-form" style="display: none;"> 
 			<h1>Home</h1>
 			<p>Welcome to Home Page!</p>
 		</div>
 		
+		<script>
+        function showLoginForm() {
+            document.getElementById('login-form').style.display = 'block';
+        }
+
+        function redirectToHome() {
+            if (document.getElementById('username').value && document.getElementById('password').value) {
+                document.getElementById('login-container').style.display = 'none';
+                document.getElementById('home-form').style.display = 'block';
+            } else {
+                alert('Please enter both username and password');
+            }
+        }
+    </script>
 		</body>
 	</html>
