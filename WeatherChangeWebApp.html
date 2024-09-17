@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<style>
+				.container {
+					background-color: #C9DFEC;
+					border-radius: 10px;
+					padding: 20px;
+					font-family: sans-serif;
+				}
+				
+				h1 {
+					font-family: sans-serif;
+				}
+				
+				.sunny{
+            background-image: url('https://png.pngtree.com/element_our/20190523/ourmid/pngtree-mbe-style-cute-cartoon-weather-sunny-sun-material-image_1077857.jpg');
+               
+        }
+           .rainy{
+            background-image: url('https://i.pinimg.com/736x/7f/53/0f/7f530f6e2583aa24c733232140dbbd55.jpg');
+           }
+           .snowy{
+            background-image: url('https://png.pngtree.com/png-vector/20220712/ourlarge/pngtree-frosty-and-snowy-weather-in-city-or-village-png-image_5933489.png');
+           }
+           .cloudy{
+            background-image: url('https://cdn.pixabay.com/photo/2012/04/18/13/23/cloudy-37012_960_720.png');
+           }
+
+			</style>
+		</head>
+		
+		<body>
+			<h1>Choose the Weather!</h1>
+			<div class="container">
+				<select id="weatherSelect" onchange='changeBackground()'>
+					<option value="sunny">Sunny</option>
+					<option value="rainy">Rainy</option>
+					<option value="snowy">Snowy</option>
+					<option value="cloudy">Cloudy</option>
+				<select>
+			</div>
+			
+			<script>
+				function changeBackground() {
+				var selectedWeather = document.getElementById('weatherSelect').value; 
+				document.body.className = selectedWeather;
+				}
+			</script>
+		</body>
+	</html>
