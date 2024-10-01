@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<style>
+				body {
+				font-family: sans-serif;
+					justify-content: center;
+					display: flex;
+					background-color: #EBF4FA;
+				}
+				.card {
+					background-color: #fff;
+					width: 300px;
+					height: 350px;
+					border-radius: 13px;
+					text-align: center;
+					margin-top: 6%;
+					padding: 10px;
+				}
+				
+				button {
+					width: 250px;
+					height: 50px;
+					background-color: #50C878;
+					color: white;
+					padding: 5px;
+					border: 1px solid #50C878;
+					font-size: 17px;
+					border-radius: 10px;
+					cursor: pointer;
+				}
+				
+				button:hover {
+					background-color: limegreen;
+				}
+			</style>
+		</head>
+		
+		<body>
+			<div class="card">
+				<div class="click-button">
+					<h1>Click the Button Game</h1>
+					<p>How many times can you click the button?</p>
+					<button id="clickButton" onclick="incrementCounter()">Click Me!</button>
+					<br><br>
+					<p>Button Clicked: <span id="clickCount">0</span> times</p>
+				</div>
+			</div>
+			
+			<script>
+				let clickCount = 0;
+				
+				function incrementCounter(){
+					clickCount++;
+					
+					document.getElementById('clickCount').innerHTML = clickCount;
+				}
+			</script>
+		</body>
+	</html>
