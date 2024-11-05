@@ -16,13 +16,63 @@
 				img {
 				padding: 10px;
 				}
-				
+		.content{
+                display: flex;
+            }		
 				.article {
+					flex: 1;
 					margin: 10px;
 					padding: 150px;
+					width: 70vh;
 				}
 				
-			
+				footer {
+					background-color: #336699;
+					color: white; 
+					text-align: center;
+					bottom: 0;
+					padding: 10px;
+					position: fixed;
+					width:100%;
+				}
+				
+				.sidebar {
+					display: flex;
+					background-color: #f2f2f2;
+					padding: 20px;
+					border-right: 2px solid #ddd;
+					position: fixed;
+                width: 10vh;
+                height: 70vh;
+                left: 0;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: #336699;
+            text-decoration: none;
+        }
+
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+		.box {
+			display: flex;
+			border: 1px solid gray;
+			width: 600px;
+			height: 150px;
+			align-items: center;
+			background-color: #FBFBF9;
+		}
+		
 			</style>
 		</head>
 		<body>
@@ -31,13 +81,85 @@
 				<h1>Simple Wikipedia Clone</h1>
 			</header>
 			
-			<div class="article">
-				<h2>Welcome to the Simple Wikipedia Clone</h2>
-				<p>This is a simple clone of Wikipedia  built using only HTML and CSS. It includes a basic layout with a header, sidebar for navigation, and a main content area for articles.</p>
+			<div class="content">
+				<div class="sidebar">
+					<nav class="sidebar">
+					<ul>
+						<li><a href="#">Main Page</a></li>
+						<li><a href="#">History</a></li>
+						<li><a href="#">Science</a></li>
+						<li><a href="#">Technology</a></li>
+						<li><a href="#">Mathamatics</a></li>
+						<li><a href="#">Art</a></li>
+						<li><a href="#">Literature</a></li>
+						<li><a href="#">Random Article</a></li>
+					</ul>
+				</nav>
+				</div>
 				
-				<p>Feel free to explore the different sections by clicking the links in the sidebar. Each link could potentially take you to a different article, but for now, this is just a statis page example.</p>
+				<div class="article">
+				<h2>Web Development</h2>
+				<p><b>Web development</b> is the work involved in developing a <a href="#">website</a> for the Internet (World Wide Web) or an intranet (a private network).<sup>[1]</sup> Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering, Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.</p>
 				
-				<p>Wikipedia is a free online encyclopedia that was launched in 2001. It allows users to contribute articles on a wide range of topics, making it one of the largest sources of knowledge on the web.</p>
+				<p>Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web sites: writing markup and coding.<sup>[2]</sup> Web development may use content management systems (CMS) to make content changes easier and available with basic technical skills</p>
+				
+				<p>For larger organizations and businesses, Web development teams can consist of hundreds of people (Web developers) and follow standard methods like Agile methodologies while developing Web sites.<sup>[1]</sup> Smaller organizations may only require a single permanent or contracting developer, or secondary assignment to related job positions such as a graphic designer or information systems technician. Web development may be a collaborative effort between departments rather than the domain of a designated department. There are three kinds of Web developer specialization: front-end developer, back-end developer, and full-stack developer.<sup>[3]</sup> Front-end developers are responsible for behavior and visuals that run in the user browser, while back-end developers deal with the servers.<sup>[4]</sup> Since the commercialization of the Web, the industry has boomed and has become one of the most used technologies ever.</p>
+			
+				<h2>Evolution of web development technologies</h2>
+				<p>The journey of web development technologies began with simple HTML pages in the early days of the internet. Over time, advancements led to the incorporation of CSS for styling and JavaScript for interactivity. This evolution transformed static websites into dynamic and responsive platforms, setting the stage for the complex and feature-rich web applications we have today.</p>
+				<ul>
+					<li>Static HTML Pages (1990s)</li>
+					<li>Introduction of CSS (late 1990s)<sup>[13]</sup></li>
+					<li>AJAX (1998)<sup>[16]</sup></li>
+					<li>Rise of Content management systems (CMS) (mid-2000s)</li>
+					<li>Mobile web (late 2000s - 2010s)</li>
+					<li>Single-page applications (SPAs) and front-end frameworks (2010s)</li>
+					<li>Server-side javaScript (2010s)</li>
+					<li>Microservices and API-driven development (2010s - present)</li>
+					<li>Progressive web apps (PWAs) (2010s - present)</li>
+					<li>JAMstack Architecture (2010s - present)</li>
+					<li>WebAssembly (Wasm) (2010s - present)</li>
+					<li>Serverless computing (2010s - present)</li>
+					<li>AI and Machine Learning Integration (2010s - present)</li>
+				</ul>
+				
+				<div class="box">
+					<img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png" width="80px" height="80px"/>
+					<p>This section contains instructions, advice, or how-to content. Please help rewrite the content so that it is more encyclopedic or move it to Wikiversity, Wikibooks, or Wikivoyage. <i>(December 2023)</i></p>
+				</div>
+				
+				<div class="box">
+					<img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="80px" height="80px"/>
+				<p>This section needs additional citations for verification. Please help improve this article by adding citations to reliable sources in this section. Unsourced material may be challenged and removed. (December 2023) <i>(Learn how and when to remove this message)</i></p>
+				</div>
+				
+				<p>The web development life cycle is a method that outlines the stages involved in building websites and web applications. It provides a structured approach, ensuring optimal results throughout the development process.<sup><i>[citation needed]<i><sup></p>
+				<p>A typical Web Development process can be divided into 7 steps.</p>
+				
+				<h3>Analysis</h3>
+				<p>Debra Howcraft and John Carroll proposed a methodology in which web development process can be divided into sequential steps. They mentioned different aspects of analysis.<sup>[17]</sup></p>
+				<p>Phase one involves crafting a web strategy and analyzing how a website can effectively achieve its goals. Keil et al's research<sup>[18]</sup> identifies the primary reasons for software project failures as a lack of top management commitment and misunderstandings of system requirements. To mitigate these risks, Phase One establishes strategic goals and objectives, designing a system to fulfill them. The decision to establish a web presence should ideally align with the organization's corporate information strategy.</p>
+				<p>The analysis phase can be divided into 3 steps:</p>
+				<ul>
+					<li>Development of a web strategy</li>
+					<li>Defining objectives</li>
+					<li>Objective analysis</li>
+				</ul>
+				<p>During this phase, the previously outlined objectives and available resources undergo analysis to determine their feasibility. This analysis is divided into six tasks, as follows:</p>
+				<ul>
+					<li><b>Technology analysis:</b> Identification of all necessary technological components and tools for constructing, hosting, and supporting the site.<li>
+					<li><b>Information analysis:</b> Identification of user-required information, whether static (web page) or dynamic (pulled "live" from a database server).</li>
+					<li><b>Skills analysis:</b> Identification of the diverse skill sets necessary to complete the project.</li>
+					<li><b>User analysis:</b> Identification of all intended users of the site, a more intricate process due to the varied range of users and technologies they may use.</li>
+					<li><b>Cost analysis:</b> Estimation of the development cost for the site or an evaluation of what is achievable within a predefined budget.</li>
+					<li><b>Risk analysis:</b> Examination of any major risks associated with site development.</li>
+				</ul>
+				
 			</div>
+			</div>
+			
+			<footer>
+				<p> &copy; 2024  Simple Website Clone / Created by Megan</p>
+			</footer>
 		</body>
 	</html>
