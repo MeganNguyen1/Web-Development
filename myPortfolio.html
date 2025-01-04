@@ -30,11 +30,36 @@
 			.article h1, p {
 				color: #FF1493;
 			}
+			
+			#project {
+				color: #FF1493;
+				text-align: center;
+			}
 			.article img{
 			margin-left: 40%;
 			border: 15px solid #FF1493;
 			border-radius: 15px;
 			}
+			
+			.container {
+				display: grid;
+				grid-template-columns: repeat(4, minmax(100px, 1fr));
+				 gap: 10px;
+					width: 95%;
+					background-color: #FFE4E1;
+					margin: auto;
+					padding: 20px;
+					border-radius: 10px;
+			}
+			.grid-item{
+                background-color: #FF1493;
+                color: white;
+                padding: 20px;
+                text-align: center;
+                border-radius: 4px;
+            }
+			
+			</style>
     </head>
     <body>
         <header>
@@ -58,7 +83,15 @@
 				<br>
 				<li>Inspirational Quotes Website</li>
 				<br>
-				<li>Weather Change Webaite</li>
+				<li>Weather Change Website</li>
+				<br>
+				<li>Cartoon Website</li>
+				<br>
+				<li>Storybook Website</li>
+				<br>
+				<li>Nature Website</li>
+				<br>
+				<li>My Portfolio Website</li>
 			</ul>
 			<br>
 			<section>
@@ -80,8 +113,23 @@
 			</section>
 		</div>
 		
-        <footer>
-
-        </footer>
+		<h1 id="project">My Projects</h1>
+		<div class="container">
+			<div class="grid-item">Food Ordering Website</div>
+			<div class="grid-item">Movie Website</div>
+			<div class="grid-item">Cartoon Website</div>
+			<div class="grid-item">Weather Change Website</div>
+			<div class="grid-item">Inspirational Quotes Website</div>
+			<div class="grid-item">Books Website</div>
+			<div class="grid-item">Nature Website</div>
+			<div class="grid-item">My Portfolio Website</div>
+		</div>
+		
+		<h1 id="project">Skills</h1>
+		<div class="container">
+			<div class="grid-item">
+			<img src="https://cdn-icons-png.flaticon.com/512/1197/1197396.png" width="40px" height="40px"/>  HTML</div>
+			<div class="grid-item"><img src="https://cdn0.iconfinder.com/data/icons/document-file-types/512/css-1024.png" width="40px" height="40px"/>  CSS</div>
+		</div>
     </body>
 </html>
