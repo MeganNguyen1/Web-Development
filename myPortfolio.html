@@ -16,10 +16,7 @@
                 height: 50px;
                 border-radius: 50px;
             }
-            header h1 {
-                color: white;
-            }
-			
+          
 			.article {
 				margin: 20px;
 				background-color: #FFE4E1;
@@ -59,6 +56,22 @@
                 border-radius: 4px;
             }
 			
+			header h1 {
+				animation: glow 2s infinite alternate;
+			}
+			
+			@keyframes glow {
+				0% {
+					color: #FFFF33;
+					text-shadow: 0 0 10px  #FFFF33, 0 0 20px  #FFFF33, 0 0 30px  #FFFF33;
+					
+					
+				}
+				100%  {
+					color: #F778A1;
+					text-shadow: 0 0 10px #F778A1, 0 0 20px, #F778A1, 0 0 30px #F778A1;
+				}
+			}
 			</style>
     </head>
     <body>
@@ -124,12 +137,3 @@
 			<div class="grid-item">Nature Website</div>
 			<div class="grid-item">My Portfolio Website</div>
 		</div>
-		
-		<h1 id="project">Skills</h1>
-		<div class="container">
-			<div class="grid-item">
-			<img src="https://cdn-icons-png.flaticon.com/512/1197/1197396.png" width="40px" height="40px"/>  HTML</div>
-			<div class="grid-item"><img src="https://cdn0.iconfinder.com/data/icons/document-file-types/512/css-1024.png" width="40px" height="40px"/>  CSS</div>
-		</div>
-    </body>
-</html>
