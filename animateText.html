@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				margin: 0px;
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #282C24;
+				font: white;
+				font-family: sans-serif;
+				overflow: hidden;
+			}
+			
+			.Name, .age {
+				font-size: 4rem;
+				font-weight: bold;
+				animation: glow 2s infinite alternate;
+				padding: 20px;
+			}
+			
+			@keyframes glow {
+				0% {
+					color: #FF6B6B;
+					text-shadow: 0 0 10px  #FF6B6B, 0 0 20px  #FF6B6B, 0 0 30px  #FF6B6B;
+					
+					
+				}
+				100%  {
+					color: #4BD8FF;
+					text-shadow: 0 0 10px #4BD8FF, 0 0 20px, #4BD8FF, 0 0 30px #4BD8FF;
+				}
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="Name">M e g a n</div>
+		
+		<div class="age">11</div>
+	</body>
+</html>
