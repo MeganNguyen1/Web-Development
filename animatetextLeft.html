@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: #48D1CC;
+				position: relative;
+				animation: animateText 3s infinite;
+            }
+
+            @keyframes animateText {
+                0%{
+                    background-color: #E0FFFF; left:8px;
+                }
+                22%{
+                    background-color: #AFEEEE; left:20px;
+                }
+                50%{
+                    background-color: #87CEEB; left:40px;
+                }
+                100%{
+                    background-color: #1E90FF; left:50px; 
+                }
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>Animation text</div>
+    </body>
+</html>
