@@ -1,0 +1,11 @@
+console.log("************************")
+console.log("*                      *")
+console.log("*        Megan         *")
+console.log("*                      *")
+console.log("************************")
+
+console.log(" ^_^")
+console.log("(o o)")
+console.log("( V )")
+console.log("-m-m-")
+console.log("Here's a cute bunny!")
