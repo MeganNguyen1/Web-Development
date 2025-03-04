@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <script>
+            let weather = prompt("What is the temperature today?")
+            if(weather > 30) {
+                alert("Drink at least 3 liters of water!")
+            } else if(weather >=20 || weather <=30) {
+                alert("Drink at least 2 liters of water!")
+            } else if(weather < 20) {
+                alert("Drink at least 1.5 liters of water!")
+            } else {
+                alert("invalid")
+            }
+
+            let push_ups = prompt("How many push-ups can you do?")
+            if(push_ups > 50) {
+                alert("You are a fitness expert!")
+            } else if(push_ups <=50 || push_ups >=30) {
+                alert("Great job! You are strong.")
+            } else if(push_ups >=10 || push_ups <=29 ) {
+                alert("Keep practicing! You're getting there.")
+            } else if(push_ups < 10) {
+                alert("Don't give up! Keep training.")
+            } else {
+                alert("invalid.")
+            }
+        </script>
+    </body>
+</html>
