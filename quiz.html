@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1 {
+                font-size: 45px;
+                font-family: sans-serif;
+            }
+            p {
+              font-size: 16px;
+              font-family: sans-serif;
+            }
+
+            .quiz {
+                background-color: skyblue;
+                color: darkblue;
+                margin: auto;
+                text-align: center;
+            }
+            button{
+                padding: 7px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="quiz">
+            <h1>Animal Fun Quiz</h1>
+            <p><b>Test your knowledge about animals!</b></p>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <script>
+             function startQuiz() { 
+                let score = 0
+
+                let animal1 = prompt("1. Which animal is known as the King of the Jungle? (Lion/Tiger)")
+                if(animal1 == "lion") {
+                    alert("Correct!")
+                    score++;
+                } else {
+                    alert("incorrect! It was lion")
+                }
+                let animal2 = prompt("2. What do pandas love to eat? (Bamboo/Grass)")
+                if(animal2 == "bamboo") {
+                    alert("Correct!")
+                    score++;
+                } else {
+                    alert("incorrect! It was bamboo")
+                }
+                let animal3= prompt("3. Which bird is known for its ability to mimic sounds? (Parrot/Eagle)")
+                if(animal3 == "parrot") {
+                    alert("Correct!")
+                    score++;
+                } else {
+                    alert("incorrect! It was parrot")
+                }
+                alert("Your final score is: "+score+"/3")
+             }
+        </script>
+    </body>
+</html>
