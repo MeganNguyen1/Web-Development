@@ -7,19 +7,19 @@
         <style>
             body {
                 font-family: 'Comic Sans MS', cursive;
-                background: linear-gradient(to right, #FFE4E1, #FFF5EE);
+                background: #edede9;
                 margin: 0;
                 padding: 0;
             }
             header {
-                background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700379897-1200x675.jpg);
+                background-image: url(https://i.pinimg.com/originals/6e/6d/60/6e6d60b20303043c0842ac09259d02a6.png);
                 color: white;
                 text-align: center;
                 padding: 2rem;
             }
             .card {
                 border-radius: 7px;
-                background: linear-gradient(to right, #FFB6C1, #FF69B4);
+                background: linear-gradient(to right, #f5ebe0, #d6ccc2);
                 padding: 20px;
                 margin: 20px;
                 box-shadow: 0 0 15px rgba(0,0,0,0.1);
@@ -27,9 +27,6 @@
             }
             .fun-fact:hover {
                 transform: scale(1.01);
-    }
-            li {
-                list-style-type: none;
             }
             video {
                 width: 100%;
@@ -49,6 +46,45 @@
                     border-radius: 12px;
                     box-shadow: 2px 2px 10px #bbb;
                 }
+                .trip-item {
+                    list-style-type: numbers;
+                }
+                .birthday {
+                    background-color: #d6ccc2;
+                    padding: 20px;
+                    width: 80%;
+                    font-size: 35px;
+                    margin: 40px auto;
+                    text-align: center;
+                    border-radius: 12px;
+                    color: white;
+                  
+                }
+
+                .animated-text {
+                    font-size: 1.8rem;
+                    color: white;
+                    animation: bounceGlow 1.5s infinite;
+                    }
+                    .date {
+                    font-weight: bold;
+                    color: #ff006e;
+                    }
+
+                @keyframes bounceGlow{
+                0% {
+                    transform: scale(1);
+                    text-shadow: 0 0 5px #fff176;
+                }
+                50% {
+                    transform: scale(1.1);
+                    text-shadow: 0 0 15px #ffea00, 0 0 25px #ffea00;
+                }
+                100% {
+                    transform: scale(1);
+                    text-shadow: 0 0 5px #fff176;
+                }
+            }
         </style>
     </head>
 
@@ -57,6 +93,10 @@
             <h1>Welcome to Megan's Fun World! 🌷✨</h1>
             <h3>Hi, I'm Megan! I'm 11 years old and I love singing 🎤, reading 📖, and sports! 🎾🏐</h3>
         </header>
+
+            <section class="birthday">
+                <h2 class="animated-text">🎉 Guess what? My birthday is on <span class="date">December 16!</span> 🎂🎈</h2>
+            </section>
 
         <section class="card">
             <h1>🧠 Fun Facts About Me</h1>
@@ -82,9 +122,6 @@
         <section class="card">
             <h1>🖼️ My Gallery</h1>
             <p>Here of some of my awesome creations!</p>
-           <img src="/JavaScript/Screenshot 2025-04-14 191744.png"/>
-           <img src="/JavaScript/Screenshot 2025-04-14 191724.png"/>
-           <img src="/JavaScript/Screenshot 2025-04-14 191713.png"/>
            <img src="/JavaScript/Screenshot 2025-04-16 184540.png"/>
            <img src="/JavaScript/Screenshot 2025-04-16 184622.png"/>
            <img src="/JavaScript/Screenshot 2025-04-16 184640.png"/>
@@ -93,6 +130,30 @@
            <img src="/JavaScript/Screenshot 2025-04-16 185007.png"/>
            <img src="/JavaScript/Screenshot 2025-04-16 184851.png"/>
            <img src="/JavaScript/Screenshot 2025-04-16 184859.png"/>
+        </section>
+
+        <section class="card">
+            <h1>📅 My Upcoming Trip Plan</h1>
+            <p>Here's what I'm going to be doing <b>over the summer!</b></p>
+            <ul>
+                <li class="trip-item"><b>June 1-June 4</b> - Go to Pennsylvania</li>
+                <li  class="trip-item"><b>June 16</b> - Have a sleepover 🛏️</li>
+                <li  class="trip-item"><b>June 20</b> - Go shopping 🛍️</li>
+                <li  class="trip-item"><b>June 31-July 18</b> - Go on a vacation 🏖️</li>
+                <li  class="trip-item"><b>July 26</b> - Go to Disney World 🏰 </li>
+                <li  class="trip-item"><b>July 30</b> - Go to an art museum 🖼️</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h1>🚀 My Projects</h1>
+            <p>I create websites using <b>HTML</b>, <b>CSS</b>, and <b>JavaScript.</b></p>
+            <ul>
+                <li>Food Ordering: <b>Pizza Website 🍕</b></li>
+                <li>Clone Website: <b>McDonalds Website 🍟</b></li>
+                <li>Weather: Weather <b>Changing Website ⛅</b></li>
+                <li>Mood Checker: <b>Mood Checker Website 🚥</b></li>
+            </ul>
         </section>
     </body>
 </html>
