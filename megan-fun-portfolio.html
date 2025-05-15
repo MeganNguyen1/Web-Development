@@ -109,6 +109,20 @@
                 background-color: #e2fdff;
                 text-align: center;
             }
+
+            button {
+                background-color: #e2fdff;
+                border: 1px solid #ADD8E6;
+                border-radius: 5px;
+                padding: 7px;
+                width: 85px;
+            }
+            input {
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 5px;
+                margin: 7px;
+            }
         </style>
     </head>
 
@@ -184,7 +198,47 @@
             </ul>
         </section>
 
+        <section class="card">
+            <h1>🎮 Game #1: Guess the Number</h1>
+            <label for="game1">Guess the number I'm thinking (between 1 and 10):</label>
+            <br><br>
+            <input type="text" id="guessInput" placeholder="Enter your guess">
+            <button onclick="checkGuess()">Guess</button>
+            <p id="gameResult"></p>
+        </section>
+
+        <section class="card">
+            <h1>📬 Contact Me (Just for Fun!)</h1>
+            <input type="text" id="name" placeholder="Your name">
+            <br>
+            <input type="text" id="message" placeholder="What do you want to say?">
+            <br><br>
+            <button onclick="fakeSend()">Send Message</button>
+        </section>
+
         <footer>
             <p>Thanks for visiting Megan's Fun World! 💫 Come back for new websites!</p>
         </footer>
+
+        <script>
+            function fakeSend() {
+                const name = document.getElementById("name").value;
+                const msg = document.getElementById("message").value;
+                if (name && msg) {
+                    alert(`Thanks ${name}! Your message is flying to Megan now! 🚀`);
+                } else {
+                    alert("Please fill out both fields! ✏️");
+                }
+            }  let secretNumber = Math.floor(Math.random() * 10) + 1;
+  function checkGuess() {
+    const guess = parseInt(document.getElementById("guessInput").value);
+    const result = document.getElementById("gameResult");
+    if (guess === secretNumber) {
+      result.textContent = "🎉 You got it! You're awesome!";
+    } else {
+      result.textContent = "Oops! Try again 🧐";
+    }
+  }
+        </script>
     </body>
+            
