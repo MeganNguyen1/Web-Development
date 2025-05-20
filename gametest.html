@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <section>
+            <h1>Guess the number!</h1>
+            <input type="number" id="guessInput" placeholder="Type in your guess">
+            <button onclick="checkGuess()">Guess</button>
+            <p id="gameResult"></p>
+        </section>
+        <script>
+            let secretNumber =  Math.floor(Math.random() * 10) + 1;
+            function checkGuess() {
+                const guess= parseInt(document.getElementById("guessInput").value);
+                const result = document.getElementById("gameResult");
+                if(guess === secretNumber) {
+                    result.textContent = "You got it! you're awesome!";
+                } else {
+                    result.textContent = "Oops! Try again";
+                }
+            }
+        </script>
+    </body>
+</html>
