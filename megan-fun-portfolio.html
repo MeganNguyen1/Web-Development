@@ -115,7 +115,10 @@
                 border: 1px solid #ADD8E6;
                 border-radius: 5px;
                 padding: 7px;
-                width: 85px;
+                font-family: 'Comic Sans MS', cursive;
+            }
+            button:hover {
+                background-color:#a8e5e9;
             }
             input {
                 border: 1px solid gray;
@@ -208,6 +211,15 @@
         </section>
 
         <section class="card">
+            <h1> 🧠 Game #2: Rock, Paper, Scissors!</h1>
+            <br>
+            <p>Pick one:</p>
+            <button onclick="PlayerChoice()">✊ Rock</button>
+            <button onclick="PlayerChoice()">✋ Paper</button>
+            <button onclick="PlayerChoice()">✌️ Scissors</button>
+        </section>
+
+        <section class="card">
             <h1>📬 Contact Me (Just for Fun!)</h1>
             <input type="text" id="name" placeholder="Your name">
             <br>
@@ -221,16 +233,15 @@
         </footer>
 
         <script>
-             let secretNumber = Math.floor(Math.random() * 10) + 1;
+            let secretNumber = Math.floor(Math.random() * 10) + 1;
                 function checkGuess() {
-                     const guess = parseInt(document.getElementById("guessInput").value);
-                     const result = document.getElementById("gameResult").value;
-
+                    const guess = parseInt(document.getElementById("guessInput").value);
+                    const result = document.getElementById("gameResult")
                     if (guess === secretNumber) {
-                        result.textContent = "🎉 You got it! You're awesome!";
+                            result.textContent = "🎉 You got it! You're awesome!";
                     } else {
-                        result.textContent = "Oops! Try again 🧐";
-                     } }
+                            result.textContent = "Oops! Try again 🧐";
+                    } }
             function fakeSend() {
                 const name = document.getElementById("name").value;
                 const msg = document.getElementById("message").value;
@@ -240,7 +251,6 @@
                     alert("Please fill out both fields! ✏️");
                 }
             } 
-             }
         </script>
     </body>
             
