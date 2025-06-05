@@ -213,10 +213,13 @@
         <section class="card">
             <h1> 🧠 Game #2: Rock, Paper, Scissors!</h1>
             <br>
+            <div class="game-box">
             <p>Pick one:</p>
-            <button onclick="PlayerChoice()">✊ Rock</button>
-            <button onclick="PlayerChoice()">✋ Paper</button>
-            <button onclick="PlayerChoice()">✌️ Scissors</button>
+            <button onclick="playRPS('rock')">✊ Rock</button>
+            <button onclick="playRPS('paper')">✋ Paper</button>
+            <button onclick="playRPS('scissors')">✌️ Scissors</button>
+            </div> 
+            <p id = "rpsResult"></p>
         </section>
 
         <section class="card">
@@ -233,6 +236,24 @@
         </footer>
 
         <script>
+            function playRPS(playerChoice) {
+                const choices = ["rock", "paper", "scissors"];
+                const computerChoice = choices[math.floor(math.random() * 3)];
+                let result = "";
+
+                if (playerChoice === computerChoice) {
+                    result = "It's a tie!";
+                } else if (
+                    (playerChoice === "rock" && computerChoice === "scissors") ||
+                    (playerChoice === "paper" && computerChoice === "rock") ||
+                    (playerChoice === "scissors" && computerChoice === "paper")
+             ) {
+                    result = `You win! ${playerChoice} beats ${computerChoice}`;
+                } else {
+                     result = `You lose! ${computerChoice} beats ${playerChoice}`;
+                }
+                documemt.getElementById("rpsResult").textContent = result;
+            }
             let secretNumber = Math.floor(Math.random() * 10) + 1;
                 function checkGuess() {
                     const guess = parseInt(document.getElementById("guessInput").value);
