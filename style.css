@@ -1,3 +1,30 @@
-body{
-    background-color: skyblue;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+    
+    body {
+    background-color: #edede9;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #d5bdaf;
+}
+header {
+    background-color: #f5ebe0;
+    height: auto;
+    border-radius: 15px;
+    font-weight: bold;
+    height: auto;
+    padding: 2em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #f5ebe0;
+    padding: 2em;
+}
+a {
+    text-decoration: none;
+    margin: 10px;
+    color: #d5bdaf;
 }
