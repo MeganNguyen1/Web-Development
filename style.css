@@ -1,30 +1,48 @@
-* {
+*  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0px;
-    padding: 0px;
 }
-    
-    body {
-    background-color: #edede9;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    color: #d5bdaf;
+body{
+    background-color: #e9ecef;
 }
 header {
-    background-color: #f5ebe0;
-    height: auto;
-    border-radius: 15px;
-    font-weight: bold;
-    height: auto;
-    padding: 2em;
-    margin-bottom: 20px;
+    text-align: center;
+    height: 100px;
+    background-color: #adb5bd;
+    color: white;
+    padding: 10px;
+}
+h1 {
+    padding: 20px;
 }
 
-footer {
-    background-color: #f5ebe0;
-    padding: 2em;
+h2 {
+    padding: 30px;
+    text-align: center;
 }
+
 a {
     text-decoration: none;
-    margin: 10px;
-    color: #d5bdaf;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+a:hover {
+    color: #7bdff2;
+}
+
+.card1 {
+    background-color: #ced4da;
+    padding: 20px;
+    border-radius: 7px;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+}
+img {
+    border-radius: 7px;
+}
+section {
+    display: flex;
 }
